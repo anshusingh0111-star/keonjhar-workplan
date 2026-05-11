@@ -43,6 +43,14 @@ td.cell{min-width:28px;text-align:center;vertical-align:middle;padding:2px 1px;}
 .sno{font-size:9px;color:#888780;margin-right:3px;}
 .cat-pill{display:inline-block;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle;}
 tr.hidden{display:none;}
+.ref-panel{margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.ref-box{border-radius:10px;border:0.5px solid #dddcd4;padding:16px 18px;background:#fff;}
+.ref-box h3{font-size:12px;font-weight:700;color:#1a1a18;margin-bottom:10px;padding-bottom:7px;border-bottom:0.5px solid #eeede8;}
+.ref-list{list-style:none;padding:0;margin:0;}
+.ref-list li{font-size:11px;color:#5f5e5a;line-height:1.6;padding:5px 0;border-bottom:0.5px solid #f2f1ed;display:flex;gap:8px;align-items:baseline;}
+.ref-list li:last-child{border-bottom:none;}
+.ref-num{font-size:9.5px;font-weight:700;color:#888780;flex-shrink:0;min-width:18px;}
+.ref-check{font-size:11px;color:#0F6E56;flex-shrink:0;}
 @media print{body{background:#fff;padding:0.5rem;}.container{border:none;padding:1rem;}.filters{display:none;}}
 </style>
 </head>
@@ -50,28 +58,28 @@ tr.hidden{display:none;}
 <div class="container">
   <div class="header">
     <h1>AECC rollout workplan — Keonjhar district</h1>
-    <p>27 milestones · 4 phases · M1 (month 1) through Q13 (approx. month 30)</p>
+    <p>27 milestones · 4 phases · M1 (month 1) through Q12 (approx. month 30)</p>
   </div>
 
   <div class="phase-commentary">
     <div class="phase-card">
       <span class="ph-badge" style="background:#E6F1FB;color:#0C447C;">Phase 0 · M1–M3</span>
-      <div class="ph-title">Padampur CHC pilot</div>
+      <div class="ph-title">Prerequisite setup</div>
       <div class="ph-period">Months 1–3 (approx. 3 months)</div>
-      <div class="ph-body">Pure groundwork — no services go live. Every workstream is in setup mode: governance structures formed, all RFPs drafted and issued, physical and HR baselines done, policies drafted, and ABHA validation begins. By end of M3 the district has a functioning PMU, a signed Apollo MoU, vendors shortlisted, and CCC space established.</div>
+      <div class="ph-body">Pure groundwork — no services go live. Every workstream is in setup mode: governance structures formed, all RFPs drafted and issued, physical and HR baselines done, 12 policies drafted, civil works and equipment deployment completed, and ABHA validation begins. By end of M3 the district has a functioning PMU, a signed Apollo MoU, vendors shortlisted, and CCC space established.</div>
       <div class="ph-milestones">
         <div class="ph-ms">State approval &amp; DMF funds committed</div>
         <div class="ph-ms">12/12 policies drafted</div>
         <div class="ph-ms">All 3 vendors (CCC/HIS/PHR) onboarded</div>
-        <div class="ph-ms">PHWS methodology approved &amp; baseline launched</div>
+        <div class="ph-ms">Civil works &amp; equipment deployment complete</div>
         <div class="ph-ms">M&amp;E framework finalized</div>
       </div>
     </div>
     <div class="phase-card">
       <span class="ph-badge" style="background:#E1F5EE;color:#085041;">Phase 1 · Q2–Q4</span>
-      <div class="ph-title">6 Padampur facilities</div>
+      <div class="ph-title">1 CHC Padampur + 5 sub-centres go live</div>
       <div class="ph-period">Quarters 2–4 (approx. 6–9 months)</div>
-      <div class="ph-body">Systems go live, first within Padampur. HIS declared live, CCC becomes operational, Apollo 66 centres activate, RAG dashboard is tested and live by Q4. ABHA registration and ASHA orientation run intensively. The first real citizen touchpoints — slot booking, CFC booths, teleconsultation — become functional. STG adherence testing begins.</div>
+      <div class="ph-body">Services go live at Padampur CHC and 5 sub-centres. HIS declared live, CCC becomes operational, Apollo 66 centres activate, RAG dashboard is tested and live by Q4. ABHA registration and ASHA orientation run intensively. First real citizen touchpoints — slot booking, CFC booths, teleconsultation — become functional. STG adherence testing begins.</div>
       <div class="ph-milestones">
         <div class="ph-ms">HIS &amp; CCC live (Q2–Q3)</div>
         <div class="ph-ms">Apollo 66 centres aligned with CCM (Q3)</div>
@@ -126,19 +134,19 @@ tr.hidden{display:none;}
     <button class="filter-btn active" onclick="filterRows('all',this)" style="background:#444441;border-color:#444441;color:#fff;">
       <span class="fb-dot" style="background:#fff;"></span>All milestones
     </button>
-    <button class="filter-btn" onclick="filterRows('governance',this)" data-color="#185FA5">
+    <button class="filter-btn" onclick="filterRows('governance',this)">
       <span class="fb-dot" style="background:#185FA5;"></span>Governance &amp; policy
     </button>
-    <button class="filter-btn" onclick="filterRows('tech',this)" data-color="#0F6E56">
+    <button class="filter-btn" onclick="filterRows('tech',this)">
       <span class="fb-dot" style="background:#0F6E56;"></span>Technology &amp; HIS
     </button>
-    <button class="filter-btn" onclick="filterRows('clinical',this)" data-color="#BA7517">
+    <button class="filter-btn" onclick="filterRows('clinical',this)">
       <span class="fb-dot" style="background:#BA7517;"></span>Clinical &amp; quality
     </button>
-    <button class="filter-btn" onclick="filterRows('citizen',this)" data-color="#7F77DD">
+    <button class="filter-btn" onclick="filterRows('citizen',this)">
       <span class="fb-dot" style="background:#7F77DD;"></span>Citizen engagement
     </button>
-    <button class="filter-btn" onclick="filterRows('infra',this)" data-color="#888780">
+    <button class="filter-btn" onclick="filterRows('infra',this)">
       <span class="fb-dot" style="background:#888780;"></span>Infrastructure
     </button>
   </div>
@@ -164,8 +172,43 @@ tr.hidden{display:none;}
   <tbody id="ganttBody"></tbody>
   </table>
   </div>
-</div>
 
+  <div class="ref-panel">
+    <div class="ref-box">
+      <h3>📋 12 Key Policies — to be drafted &amp; implemented</h3>
+      <ul class="ref-list">
+        <li><span class="ref-num">1</span>Omni-channel access</li>
+        <li><span class="ref-num">2</span>Teleconsult through booths, with no turn-back policy</li>
+        <li><span class="ref-num">3</span>Panel of doctors for teleconsult onboarded with pricing approved (public and private) — for public sector doctors, remuneration to be provided if outside office hours</li>
+        <li><span class="ref-num">4</span>No denial of service irrespective of ABHA status</li>
+        <li><span class="ref-num">5</span>Alternate IDs used for non-ABHA situations</li>
+        <li><span class="ref-num">6</span>Clear pathway for different ID availability in different situations</li>
+        <li><span class="ref-num">7</span>Consent guidelines developed and implemented (AV consent suggested)</li>
+        <li><span class="ref-num">8</span>'Own your phone' policy and provision of appropriate mobile phones to frontline workers and all caregivers</li>
+        <li><span class="ref-num">9</span>Pre-reading of patient-related information by provider before meeting</li>
+        <li><span class="ref-num">10</span>Information sharing guidelines in facility between individual doctors, teams, nurses and the department</li>
+        <li><span class="ref-num">11</span>Hardware and software available</li>
+        <li><span class="ref-num">12</span>Filling up of all vacant positions</li>
+      </ul>
+    </div>
+    <div class="ref-box">
+      <h3>🏗 Civil Works &amp; Equipment Checklist</h3>
+      <ul class="ref-list">
+        <li><span class="ref-check">✓</span>Signage installed</li>
+        <li><span class="ref-check">✓</span>Queue areas set up</li>
+        <li><span class="ref-check">✓</span>Teleconsult cabins constructed</li>
+        <li><span class="ref-check">✓</span>Power backup in place</li>
+        <li><span class="ref-check">✓</span>BP monitors deployed</li>
+        <li><span class="ref-check">✓</span>Glucometers deployed</li>
+        <li><span class="ref-check">✓</span>Hb meters deployed</li>
+        <li><span class="ref-check">✓</span>FLW tablets deployed</li>
+        <li><span class="ref-check">✓</span>Snagging &amp; commissioning completed</li>
+        <li><span class="ref-check">✓</span>Asset tagging done</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
 <script>
 const P0='#185FA5',P1='#0F6E56',P2='#BA7517',P3='#993556';
 const periods=['M1','M2','M3','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'];
@@ -174,7 +217,6 @@ const phaseSep=p=>['M1','Q2','Q5','Q9'].includes(p);
 const catColor={governance:'#185FA5',tech:'#0F6E56',clinical:'#BA7517',citizen:'#7F77DD',infra:'#888780'};
 const catBg={governance:'#E6F1FB',tech:'#E1F5EE',clinical:'#FAEEDA',citizen:'#EEEDFE',infra:'#F1EFE8'};
 const catLabel={governance:'Gov',tech:'Tech',clinical:'Clinical',citizen:'Citizen',infra:'Infra'};
-
 const data=[
   {id:'1',label:'Proposal reviewed by State Health Secretary',type:'milestone',cat:'governance',periods:[]},
   {id:'1.1',label:'Proposal to HSecy shared with Collector',type:'sub',cat:'governance',periods:['M1']},
@@ -336,10 +378,8 @@ const data=[
   {id:'27.5',label:'Knowledge transfer & handover done',type:'sub',cat:'governance',periods:['Q12']},
   {id:'27.6',label:'Phasing out; connecting with State CCM systems',type:'sub',cat:'governance',periods:['Q12']},
 ];
-
 const catGroups={};
 ['governance','tech','clinical','citizen','infra'].forEach(c=>{catGroups[c]=data.filter(d=>d.cat===c).map(d=>d.id);});
-
 function renderTable(){
   const tbody=document.getElementById('ganttBody');
   tbody.innerHTML='';
@@ -367,7 +407,6 @@ function renderTable(){
     tbody.appendChild(tr);
   });
 }
-
 function filterRows(cat,btn){
   document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');b.style.background='';b.style.borderColor='';b.style.color='';});
   btn.classList.add('active');
