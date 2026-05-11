@@ -1,1 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AECC Rollout Workplan — Keonjhar District</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f9f8f6;color:#1a1a18;padding:2rem;}
+.container{max-width:1280px;margin:0 auto;background:#fff;border-radius:12px;border:0.5px solid #dddcd4;padding:2rem;}
+.header{margin-bottom:1.5rem;}
+.header h1{font-size:20px;font-weight:600;color:#1a1a18;margin-bottom:3px;}
+.header p{font-size:13px;color:#73726c;}
+.phase-commentary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 1.5rem;}
+.phase-card{border-radius:10px;border:0.5px solid #dddcd4;padding:13px 15px;background:#fff;}
+.ph-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:7px;}
+.ph-title{font-size:12px;font-weight:600;color:#1a1a18;margin-bottom:3px;}
+.ph-period{font-size:11px;color:#73726c;margin-bottom:7px;}
+.ph-body{font-size:11px;color:#5f5e5a;line-height:1.55;}
+.ph-milestones{margin-top:9px;border-top:0.5px solid #eeede8;padding-top:8px;}
+.ph-ms{font-size:10px;color:#5f5e5a;line-height:1.7;display:flex;gap:5px;align-items:baseline;}
+.ph-ms::before{content:"›";flex-shrink:0;color:#888780;}
+.legend-row{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:0.9rem;align-items:center;}
+.lg{display:flex;align-items:center;gap:5px;font-size:11px;color:#5f5e5a;}
+.ld{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
+.lsep{width:1px;height:14px;background:#dddcd4;}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.1rem;}
+.filter-btn{font-size:11px;padding:4px 12px;border:0.5px solid #b4b2a9;border-radius:8px;background:#fff;color:#5f5e5a;cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:5px;}
+.filter-btn:hover{background:#f1efe8;}
+.filter-btn.active{color:#fff;border-color:transparent;}
+.filter-btn .fb-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0;}
+.gantt-wrap{width:100%;overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:11px;}
+th{font-weight:500;font-size:10px;color:#73726c;padding:4px 5px;text-align:center;border-bottom:0.5px solid #dddcd4;white-space:nowrap;}
+th.lc{text-align:left;min-width:230px;max-width:230px;}
+td{padding:0;border-bottom:0.5px solid #eeede8;}
+td.label{padding:4px 6px 4px 0;line-height:1.35;min-width:230px;max-width:230px;word-break:break-word;vertical-align:middle;}
+tr.mrow>td.label{font-weight:500;font-size:10px;}
+tr.srow>td.label{font-size:10px;padding-left:16px;color:#5f5e5a;}
+td.cell{min-width:28px;text-align:center;vertical-align:middle;padding:2px 1px;}
+.bar{width:18px;height:12px;border-radius:2px;margin:0 auto;}
+.psep{border-left:1.5px solid #b4b2a9!important;}
+.sno{font-size:9px;color:#888780;margin-right:3px;}
+.cat-pill{display:inline-block;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle;}
+tr.hidden{display:none;}
+.ref-panel{margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.ref-box{border-radius:10px;border:0.5px solid #dddcd4;padding:16px 18px;background:#fff;}
+.ref-box h3{font-size:12px;font-weight:700;color:#1a1a18;margin-bottom:10px;padding-bottom:7px;border-bottom:0.5px solid #eeede8;}
+.ref-list{list-style:none;padding:0;margin:0;}
+.ref-list li{font-size:11px;color:#5f5e5a;line-height:1.6;padding:5px 0;border-bottom:0.5px solid #f2f1ed;display:flex;gap:8px;align-items:baseline;}
+.ref-list li:last-child{border-bottom:none;}
+.ref-num{font-size:9.5px;font-weight:700;color:#888780;flex-shrink:0;min-width:18px;}
+.ref-check{font-size:11px;color:#0F6E56;flex-shrink:0;}
+@media print{body{background:#fff;padding:0.5rem;}.container{border:none;padding:1rem;}.filters{display:none;}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AECC rollout workplan — Keonjhar district</h1>
+    <p>27 milestones · 4 phases · M1 (month 1) through Q12 (approx. month 30)</p>
+  </div>
+
+  <div class="phase-commentary">
+    <div class="phase-card">
+      <span class="ph-badge" style="background:#E6F1FB;color:#0C447C;">Phase 0 · M1–M3</span>
+      <div class="ph-title">Prerequisite setup</div>
+      <div class="ph-period">Months 1–3 (approx. 3 months)</div>
+      <div class="ph-body">Pure groundwork — no services go live. Every workstream is in setup mode: governance structures formed, all RFPs drafted and issued, physical and HR baselines done, 12 policies drafted, civil works and equipment deployment completed, and ABHA validation begins. By end of M3 the district has a functioning PMU, a signed Apollo MoU, vendors shortlisted, and CCC space established.</div>
+      <div class="ph-milestones">
+        <div class="ph-ms">State approval &amp; DMF funds committed</div>
+        <div class="ph-ms">12/12 policies drafted</div>
+        <div class="ph-ms">All 3 vendors (CCC/HIS/PHR) onboarded</div>
+        <div class="ph-ms">Civil works &amp; equipment deployment complete</div>
+        <div class="ph-ms">M&amp;E framework finalized</div>
+      </div>
+    </div>
+    <div class="phase-card">
+      <span class="ph-badge" style="background:#E1F5EE;color:#085041;">Phase 1 · Q2–Q4</span>
+      <div class="ph-title">1 CHC Padampur + 5 sub-centres go live</div>
+      <div class="ph-period">Quarters 2–4 (approx. 6–9 months)</div>
+      <div class="ph-body">Services go live at Padampur CHC and 5 sub-centres. HIS declared live, CCC becomes operational, Apollo 66 centres activate, RAG dashboard is tested and live by Q4. ABHA registration and ASHA orientation run intensively. First real citizen touchpoints — slot booking, CFC booths, teleconsultation — become functional. STG adherence testing begins.</div>
+      <div class="ph-milestones">
+        <div class="ph-ms">HIS &amp; CCC live (Q2–Q3)</div>
+        <div class="ph-ms">Apollo 66 centres aligned with CCM (Q3)</div>
+        <div class="ph-ms">RAG dashboard functioning (Q4)</div>
+        <div class="ph-ms">Citizen alerts go live (Q3)</div>
+        <div class="ph-ms">PHWS scorecards published (Q2)</div>
+      </div>
+    </div>
+    <div class="phase-card">
+      <span class="ph-badge" style="background:#FAEEDA;color:#633806;">Phase 2 · Q5–Q8</span>
+      <div class="ph-title">Full Keonjhar district</div>
+      <div class="ph-period">Quarters 5–8 (approx. 9–18 months)</div>
+      <div class="ph-body">Scale-out across the district. All infra rollouts repeat at new facilities (booths, HIS, CFC, slot management). Additional 34 Apollo centres go live. CPE and prescription audits become routine. Knowledge products begin development. Swasti recruits start transitioning — full-time PMU is funded by Dept/DMF by Q5. Inter-block competition designed.</div>
+      <div class="ph-milestones">
+        <div class="ph-ms">Full-time internal PMU funded (Q5)</div>
+        <div class="ph-ms">34 additional Apollo centres (Q5–Q6)</div>
+        <div class="ph-ms">CPE &amp; prescription audits running (Q6–Q7)</div>
+        <div class="ph-ms">Knowledge products in development (Q8)</div>
+        <div class="ph-ms">Dashboards institutionalized (Q8+)</div>
+      </div>
+    </div>
+    <div class="phase-card">
+      <span class="ph-badge" style="background:#FBEAF0;color:#4B1528;">Phase 3 · Q9–Q13</span>
+      <div class="ph-title">Stabilization &amp; phasing out</div>
+      <div class="ph-period">Quarters 9–13 (approx. 18–30 months)</div>
+      <div class="ph-body">Swasti steps back; PMU runs fully on internal staff by Q10. Monitoring, refresher campaigns and biannual PHWS scorecards continue. Knowledge transfer formally completed (Q12). The program connects to State CCM systems and Swasti exits. Routine governance — steering meetings, STG reviews, audits, dashboard use — is entirely district-owned.</div>
+      <div class="ph-milestones">
+        <div class="ph-ms">PMU fully internal, Swasti phased out (Q10)</div>
+        <div class="ph-ms">Biannual PHWS &amp; inter-block competition active</div>
+        <div class="ph-ms">Knowledge transfer &amp; handover done (Q12)</div>
+        <div class="ph-ms">State CCM system connection (Q12)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend-row">
+    <span style="font-size:11px;font-weight:600;color:#5f5e5a;">Phase bars:</span>
+    <div class="lg"><div class="ld" style="background:#185FA5;"></div>Phase 0</div>
+    <div class="lg"><div class="ld" style="background:#0F6E56;"></div>Phase 1</div>
+    <div class="lg"><div class="ld" style="background:#BA7517;"></div>Phase 2</div>
+    <div class="lg"><div class="ld" style="background:#993556;"></div>Phase 3</div>
+    <div class="lsep"></div>
+    <span style="font-size:11px;font-weight:600;color:#5f5e5a;">Category:</span>
+    <div class="lg"><div class="ld" style="background:#185FA5;"></div>Governance &amp; policy</div>
+    <div class="lg"><div class="ld" style="background:#0F6E56;"></div>Technology &amp; HIS</div>
+    <div class="lg"><div class="ld" style="background:#BA7517;"></div>Clinical &amp; quality</div>
+    <div class="lg"><div class="ld" style="background:#7F77DD;"></div>Citizen engagement</div>
+    <div class="lg"><div class="ld" style="background:#888780;"></div>Infrastructure</div>
+  </div>
+
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterRows('all',this)" style="background:#444441;border-color:#444441;color:#fff;">
+      <span class="fb-dot" style="background:#fff;"></span>All milestones
+    </button>
+    <button class="filter-btn" onclick="filterRows('governance',this)">
+      <span class="fb-dot" style="background:#185FA5;"></span>Governance &amp; policy
+    </button>
+    <button class="filter-btn" onclick="filterRows('tech',this)">
+      <span class="fb-dot" style="background:#0F6E56;"></span>Technology &amp; HIS
+    </button>
+    <button class="filter-btn" onclick="filterRows('clinical',this)">
+      <span class="fb-dot" style="background:#BA7517;"></span>Clinical &amp; quality
+    </button>
+    <button class="filter-btn" onclick="filterRows('citizen',this)">
+      <span class="fb-dot" style="background:#7F77DD;"></span>Citizen engagement
+    </button>
+    <button class="filter-btn" onclick="filterRows('infra',this)">
+      <span class="fb-dot" style="background:#888780;"></span>Infrastructure
+    </button>
+  </div>
+
+  <div class="gantt-wrap">
+  <table id="ganttTable">
+  <thead>
+  <tr>
+    <th class="lc"></th>
+    <th class="psep" colspan="3" style="background:#E6F1FB;color:#0C447C;">Phase 0</th>
+    <th class="psep" colspan="3" style="background:#E1F5EE;color:#085041;">Phase 1</th>
+    <th class="psep" colspan="4" style="background:#FAEEDA;color:#633806;">Phase 2</th>
+    <th class="psep" colspan="4" style="background:#FBEAF0;color:#4B1528;">Phase 3</th>
+  </tr>
+  <tr>
+    <th class="lc"></th>
+    <th class="psep" style="color:#185FA5;">M1</th><th style="color:#185FA5;">M2</th><th style="color:#185FA5;">M3</th>
+    <th class="psep" style="color:#0F6E56;">Q2</th><th style="color:#0F6E56;">Q3</th><th style="color:#0F6E56;">Q4</th>
+    <th class="psep" style="color:#BA7517;">Q5</th><th style="color:#BA7517;">Q6</th><th style="color:#BA7517;">Q7</th><th style="color:#BA7517;">Q8</th>
+    <th class="psep" style="color:#993556;">Q9</th><th style="color:#993556;">Q10</th><th style="color:#993556;">Q11</th><th style="color:#993556;">Q12</th>
+  </tr>
+  </thead>
+  <tbody id="ganttBody"></tbody>
+  </table>
+  </div>
+
+  <div class="ref-panel">
+    <div class="ref-box">
+      <h3>📋 12 Key Policies — to be drafted &amp; implemented</h3>
+      <ul class="ref-list">
+        <li><span class="ref-num">1</span>Omni-channel access</li>
+        <li><span class="ref-num">2</span>Teleconsult through booths, with no turn-back policy</li>
+        <li><span class="ref-num">3</span>Panel of doctors for teleconsult onboarded with pricing approved (public and private) — for public sector doctors, remuneration to be provided if outside office hours</li>
+        <li><span class="ref-num">4</span>No denial of service irrespective of ABHA status</li>
+        <li><span class="ref-num">5</span>Alternate IDs used for non-ABHA situations</li>
+        <li><span class="ref-num">6</span>Clear pathway for different ID availability in different situations</li>
+        <li><span class="ref-num">7</span>Consent guidelines developed and implemented (AV consent suggested)</li>
+        <li><span class="ref-num">8</span>'Own your phone' policy and provision of appropriate mobile phones to frontline workers and all caregivers</li>
+        <li><span class="ref-num">9</span>Pre-reading of patient-related information by provider before meeting</li>
+        <li><span class="ref-num">10</span>Information sharing guidelines in facility between individual doctors, teams, nurses and the department</li>
+        <li><span class="ref-num">11</span>Hardware and software available</li>
+        <li><span class="ref-num">12</span>Filling up of all vacant positions</li>
+      </ul>
+    </div>
+    <div class="ref-box">
+      <h3>🏗 Civil Works &amp; Equipment Checklist</h3>
+      <ul class="ref-list">
+        <li><span class="ref-check">✓</span>Signage installed</li>
+        <li><span class="ref-check">✓</span>Queue areas set up</li>
+        <li><span class="ref-check">✓</span>Teleconsult cabins constructed</li>
+        <li><span class="ref-check">✓</span>Power backup in place</li>
+        <li><span class="ref-check">✓</span>BP monitors deployed</li>
+        <li><span class="ref-check">✓</span>Glucometers deployed</li>
+        <li><span class="ref-check">✓</span>Hb meters deployed</li>
+        <li><span class="ref-check">✓</span>FLW tablets deployed</li>
+        <li><span class="ref-check">✓</span>Snagging &amp; commissioning completed</li>
+        <li><span class="ref-check">✓</span>Asset tagging done</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<script>
+const P0='#185FA5',P1='#0F6E56',P2='#BA7517',P3='#993556';
+const periods=['M1','M2','M3','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'];
+const phaseOf=p=>['M1','M2','M3'].includes(p)?P0:['Q2','Q3','Q4'].includes(p)?P1:['Q5','Q6','Q7','Q8'].includes(p)?P2:P3;
+const phaseSep=p=>['M1','Q2','Q5','Q9'].includes(p);
+const catColor={governance:'#185FA5',tech:'#0F6E56',clinical:'#BA7517',citizen:'#7F77DD',infra:'#888780'};
+const catBg={governance:'#E6F1FB',tech:'#E1F5EE',clinical:'#FAEEDA',citizen:'#EEEDFE',infra:'#F1EFE8'};
+const catLabel={governance:'Gov',tech:'Tech',clinical:'Clinical',citizen:'Citizen',infra:'Infra'};
+const data=[
+  {id:'1',label:'Proposal reviewed by State Health Secretary',type:'milestone',cat:'governance',periods:[]},
+  {id:'1.1',label:'Proposal to HSecy shared with Collector',type:'sub',cat:'governance',periods:['M1']},
+  {id:'1.2',label:'Collector submits proposal to State',type:'sub',cat:'governance',periods:['M1']},
+  {id:'1.3',label:'State reviews & agrees',type:'sub',cat:'governance',periods:['M2']},
+  {id:'1.4',label:'DMF funds ready for release',type:'sub',cat:'governance',periods:['M2']},
+  {id:'1.5',label:'Non-DMF resources organized by NHM',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'2',label:'District coordination & PMU constituted; roadmap approved',type:'milestone',cat:'governance',periods:[]},
+  {id:'2.1',label:'District coordination mechanism identified',type:'sub',cat:'governance',periods:['M1']},
+  {id:'2.2',label:'Swasti recruits onboarded',type:'sub',cat:'governance',periods:['M1']},
+  {id:'2.3',label:'GT/NHM staff onboarded',type:'sub',cat:'governance',periods:['M1']},
+  {id:'2.4',label:'PMU constituted with JDs',type:'sub',cat:'governance',periods:['M2']},
+  {id:'2.5',label:'PMU oriented',type:'sub',cat:'governance',periods:['M2']},
+  {id:'2.6',label:'Roadmap approved',type:'sub',cat:'governance',periods:['M2']},
+  {id:'2.7',label:'Steering committee TOR finalized',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'2.8',label:'Full-time PMU funded by Dept/DMF',type:'sub',cat:'governance',periods:['Q5']},
+  {id:'2.9',label:'Steering coordination meetings held',type:'sub',cat:'governance',periods:['Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'2.10',label:'PMU fully internal (Swasti phases out)',type:'sub',cat:'governance',periods:['Q10']},
+  {id:'3',label:'Actions coordinated by PMU; all 12 policies issued',type:'milestone',cat:'governance',periods:[]},
+  {id:'3.1',label:'4 of 12 policies in place',type:'sub',cat:'governance',periods:['M1']},
+  {id:'3.2',label:'8 of 12 policies in place',type:'sub',cat:'governance',periods:['M2']},
+  {id:'3.3',label:'12 of 12 policies in place',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'3.4',label:'Socialization of policies',type:'sub',cat:'governance',periods:['Q3','Q5','Q6','Q7','Q8']},
+  {id:'3.5',label:'Policy adherence reviewed',type:'sub',cat:'governance',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'4',label:'ABDM readiness assessment — entire district',type:'milestone',cat:'tech',periods:[]},
+  {id:'4.1',label:'Assessment checklist drafted & approved',type:'sub',cat:'tech',periods:['M1']},
+  {id:'4.2',label:'Assessment conducted by vendor',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'4.3',label:'Integration & data transfer issues monitored',type:'sub',cat:'tech',periods:['Q3','Q4','Q5']},
+  {id:'5',label:'CFC/Apollo upgradation; MoU revised; payment configured',type:'milestone',cat:'tech',periods:[]},
+  {id:'5.1',label:'MOU reviewed',type:'sub',cat:'tech',periods:['M1']},
+  {id:'5.2',label:'MOU revised',type:'sub',cat:'tech',periods:['M1']},
+  {id:'5.3',label:'New MOU issued',type:'sub',cat:'tech',periods:['M2']},
+  {id:'6',label:'Staffing review to identify availability',type:'milestone',cat:'governance',periods:[]},
+  {id:'6.1',label:'HR baseline assessed',type:'sub',cat:'governance',periods:['M1']},
+  {id:'6.2',label:'Assessment report with recommendations',type:'sub',cat:'governance',periods:['M2']},
+  {id:'6.3',label:'Rationalization steps identified',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'6.4',label:'Availability issues addressed',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'7',label:'Physical infrastructure improvements made',type:'milestone',cat:'infra',periods:[]},
+  {id:'7.1',label:'Infra baseline checklist developed',type:'sub',cat:'infra',periods:['M1']},
+  {id:'7.2',label:'Infra baseline done',type:'sub',cat:'infra',periods:['M1']},
+  {id:'7.3',label:'Report drafted & shared with district',type:'sub',cat:'infra',periods:['M2']},
+  {id:'7.4',label:'Basic minimum infra available',type:'sub',cat:'infra',periods:['M2','Q2']},
+  {id:'7.5',label:'Infra improvements completed',type:'sub',cat:'infra',periods:['Q3','Q4','Q5','Q6','Q7','Q8']},
+  {id:'8',label:'PHWS methodology approved; baseline published',type:'milestone',cat:'governance',periods:[]},
+  {id:'8.1',label:'PHWS methodology drafted',type:'sub',cat:'governance',periods:['M1']},
+  {id:'8.2',label:'Methodology approved by district',type:'sub',cat:'governance',periods:['M1']},
+  {id:'8.3',label:'RFP for baseline issued (external)',type:'sub',cat:'governance',periods:['M2']},
+  {id:'8.4',label:'Training for baseline (internal)',type:'sub',cat:'governance',periods:['M2']},
+  {id:'8.5',label:'Field survey done',type:'sub',cat:'governance',periods:['M2']},
+  {id:'8.6',label:'Score cards generated',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'8.7',label:'Collector reviews & publishes scorecards',type:'sub',cat:'governance',periods:['Q2']},
+  {id:'9',label:'STGs & care pathways finalised; staff oriented',type:'milestone',cat:'clinical',periods:[]},
+  {id:'9.1',label:'STGs and protocols collated/drafted',type:'sub',cat:'clinical',periods:['M1']},
+  {id:'9.2',label:'Changes approved by state/district',type:'sub',cat:'clinical',periods:['M2']},
+  {id:'9.3',label:'Feeds into CCC/AQE',type:'sub',cat:'clinical',periods:['Q2']},
+  {id:'9.4',label:'Quality policy issued',type:'sub',cat:'clinical',periods:['Q2']},
+  {id:'9.5',label:'STG orientation done',type:'sub',cat:'clinical',periods:['Q3','Q5','Q6','Q7','Q8']},
+  {id:'9.6',label:'STG adherence tested',type:'sub',cat:'clinical',periods:['Q4','Q5','Q6','Q7','Q8']},
+  {id:'9.7',label:'STG review meetings held',type:'sub',cat:'clinical',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'10',label:'RFPs issued; CCC, HIS & PHR vendors onboarded',type:'milestone',cat:'tech',periods:[]},
+  {id:'10.1',label:'All 3 RFPs drafted',type:'sub',cat:'tech',periods:['M1']},
+  {id:'10.2',label:'Submitted to district for review',type:'sub',cat:'tech',periods:['M1']},
+  {id:'10.3',label:'District inputs incorporated',type:'sub',cat:'tech',periods:['M1']},
+  {id:'10.4',label:'RFPs issued',type:'sub',cat:'tech',periods:['M1','M2']},
+  {id:'10.5',label:'Proposals evaluated',type:'sub',cat:'tech',periods:['M2','Q2']},
+  {id:'10.6',label:'Results declared',type:'sub',cat:'tech',periods:['M2','Q2']},
+  {id:'10.7',label:'Vendor onboarded',type:'sub',cat:'tech',periods:['M2','Q2']},
+  {id:'10.8',label:'Vendor demonstrates software UI',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'10.9',label:'Systems tested in Padampur; bugs fixed',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'10.10',label:'Software operational smoothly',type:'sub',cat:'tech',periods:['Q4','Q5','Q7','Q8']},
+  {id:'11',label:'Internet & hardware deployed; ABDM-compliant HIS installed',type:'milestone',cat:'tech',periods:[]},
+  {id:'11.1',label:'Gap assessments & concerns identified',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'11.2',label:'Internet/hardware/ABDM installed (Padampur)',type:'sub',cat:'tech',periods:['Q3','Q5','Q7']},
+  {id:'11.3',label:'Hardware gaps addressed by vendor',type:'sub',cat:'tech',periods:['Q3','Q5','Q7']},
+  {id:'12',label:'HIS live; slot management, EHR & referral tracking operational',type:'milestone',cat:'tech',periods:[]},
+  {id:'12.1',label:'HIS declared live by vendor',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'12.2',label:'Slot management initiated',type:'sub',cat:'tech',periods:['Q3','Q5','Q7']},
+  {id:'12.3',label:'Slot management reviewed; bugs addressed',type:'sub',cat:'tech',periods:['Q4']},
+  {id:'12.4',label:'EHR functioning with quality standards',type:'sub',cat:'tech',periods:['Q4','Q5','Q7']},
+  {id:'13',label:'RAG dashboard designed; vendor onboarded; access configured',type:'milestone',cat:'tech',periods:[]},
+  {id:'13.1',label:'Vendor onboarded & access configured',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'13.2',label:'RAG dashboard tested; bugs addressed',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'13.3',label:'Stakeholders introduced & trained',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'13.4',label:'RAG dashboard functioning smoothly',type:'sub',cat:'tech',periods:['Q4']},
+  {id:'13.5',label:'Stakeholders have dashboard access',type:'sub',cat:'tech',periods:['Q4']},
+  {id:'13.6',label:'Automatic & customizable reports available',type:'sub',cat:'tech',periods:['Q4','Q5']},
+  {id:'13.7',label:'RAG dashboard live',type:'sub',cat:'tech',periods:['Q4','Q5','Q7']},
+  {id:'14',label:'Key staff posted; training for CCC & CFC completed',type:'milestone',cat:'governance',periods:[]},
+  {id:'14.1',label:'CCC, CFC & booth staff onboarded & trained',type:'sub',cat:'governance',periods:['Q2','Q5','Q7','Q8']},
+  {id:'14.2',label:'Staff management done by vendor',type:'sub',cat:'governance',periods:['Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'15',label:'CCC setup, built & deployed',type:'milestone',cat:'tech',periods:[]},
+  {id:'15.1',label:'CCC set up',type:'sub',cat:'tech',periods:['M2']},
+  {id:'15.2',label:'Staff trained & ready',type:'sub',cat:'tech',periods:['Q2']},
+  {id:'15.3',label:'CCC functionality tested; bugs addressed',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'15.4',label:'CCC functioning smoothly (phase-wise)',type:'sub',cat:'tech',periods:['Q4','Q5','Q7']},
+  {id:'16',label:'ABHA saturated; population registries; ASHAs equipped',type:'milestone',cat:'citizen',periods:[]},
+  {id:'16.1',label:'ABHA validation done',type:'sub',cat:'citizen',periods:['M1','M2','Q2','Q3','Q4','Q5','Q6']},
+  {id:'16.2',label:'New ABHA issued',type:'sub',cat:'citizen',periods:['M1','M2','Q2','Q3','Q4','Q5','Q6']},
+  {id:'16.3',label:'Population registry populated',type:'sub',cat:'citizen',periods:['M1','M2','Q2','Q3','Q4','Q5','Q6','Q7','Q8']},
+  {id:'16.4',label:'Phones/tabs issued to ASHAs',type:'sub',cat:'citizen',periods:['M1','M2','Q2','Q3','Q4','Q5','Q6','Q8']},
+  {id:'16.5',label:'Orientation of ASHAs done',type:'sub',cat:'citizen',periods:['M2','Q2','Q3','Q5','Q7','Q8']},
+  {id:'17',label:'Apollo 66 centres live with CCM; eSanjeevani integrated',type:'milestone',cat:'tech',periods:[]},
+  {id:'17.1',label:'66 centres aligned with CCC; smart payment',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'17.2',label:'Specialists onboarded for teleconsultation',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'17.3',label:'Additional 34 centres set up (phased)',type:'sub',cat:'tech',periods:['Q4','Q5','Q6']},
+  {id:'17.4',label:'eSanjeevani integrated with CCC',type:'sub',cat:'tech',periods:['Q4','Q5','Q6']},
+  {id:'18',label:'Booths; no-turn-away SOP; teleconsult & token boards deployed',type:'milestone',cat:'infra',periods:[]},
+  {id:'18.1',label:'Booth available',type:'sub',cat:'infra',periods:['Q3','Q5','Q7']},
+  {id:'18.2',label:'Teleconsultation & token system in place',type:'sub',cat:'infra',periods:['Q3','Q5','Q7']},
+  {id:'18.3',label:'Monitor & assess booth implementation',type:'sub',cat:'infra',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'18.4',label:'Recommendations for improving access',type:'sub',cat:'infra',periods:['Q4','Q5','Q7']},
+  {id:'19',label:'CFC operational: ABHA, vitals, booking, NCD screening',type:'milestone',cat:'clinical',periods:[]},
+  {id:'19.1',label:'CFC operational',type:'sub',cat:'clinical',periods:['Q4','Q5','Q7']},
+  {id:'19.2',label:'Assess implementation',type:'sub',cat:'clinical',periods:['Q4','Q6','Q8']},
+  {id:'19.3',label:'Recommendations for improvement',type:'sub',cat:'clinical',periods:['Q4','Q6','Q8']},
+  {id:'20',label:'CCC fully operational: triage, appointments, referrals, routing',type:'milestone',cat:'tech',periods:[]},
+  {id:'20.1',label:'CCC fully operational',type:'sub',cat:'tech',periods:['Q3']},
+  {id:'20.2',label:'KPIs tracked; issues identified',type:'sub',cat:'tech',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'20.3',label:'Recommendations to optimize & improve',type:'sub',cat:'tech',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'20.4',label:'CCC connecting citizens',type:'sub',cat:'tech',periods:['Q3','Q5','Q7']},
+  {id:'21',label:'Citizen-level omni-channel campaign',type:'milestone',cat:'citizen',periods:[]},
+  {id:'21.1',label:'Campaign designed',type:'sub',cat:'citizen',periods:['M1']},
+  {id:'21.2',label:'Collaterals developed',type:'sub',cat:'citizen',periods:['M1']},
+  {id:'21.3',label:'Implementation modalities agreed',type:'sub',cat:'citizen',periods:['M1']},
+  {id:'21.4',label:'Campaign implemented',type:'sub',cat:'citizen',periods:['Q3','Q5','Q7']},
+  {id:'21.5',label:'Monitor & support improvements',type:'sub',cat:'citizen',periods:['Q3','Q5','Q7']},
+  {id:'21.6',label:'Refresher campaigns across district',type:'sub',cat:'citizen',periods:['Q9','Q10','Q11','Q12']},
+  {id:'22',label:'PHR app functional and promoted',type:'milestone',cat:'citizen',periods:[]},
+  {id:'22.1',label:'PHR app available to deploy',type:'sub',cat:'citizen',periods:['Q2','Q3']},
+  {id:'22.2',label:'Campaign includes PHR info',type:'sub',cat:'citizen',periods:['Q3','Q5','Q6','Q7','Q8']},
+  {id:'22.3',label:'ASHAs trained to handhold citizens',type:'sub',cat:'citizen',periods:['Q3','Q5','Q6','Q7','Q8']},
+  {id:'22.4',label:'Assess EHR interoperability',type:'sub',cat:'citizen',periods:['Q4','Q5']},
+  {id:'22.6',label:'Refresher campaigns done',type:'sub',cat:'citizen',periods:['Q8','Q9','Q10','Q11','Q12']},
+  {id:'23',label:'STG-based prescription audits & CPE mandated',type:'milestone',cat:'clinical',periods:[]},
+  {id:'23.1',label:'STG-based audits designed',type:'sub',cat:'clinical',periods:['Q3']},
+  {id:'23.2',label:'Audit initiated',type:'sub',cat:'clinical',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'23.3',label:'CPE designed',type:'sub',cat:'clinical',periods:['Q4','Q5']},
+  {id:'23.4',label:'Prescription audits done',type:'sub',cat:'clinical',periods:['Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'23.5',label:'CPE initiated',type:'sub',cat:'clinical',periods:['Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'24',label:'RAG live: alerts, ANC defaulters, NCD gaps; Collector review',type:'milestone',cat:'tech',periods:[]},
+  {id:'24.1',label:'Dashboard live — care coordination intel',type:'sub',cat:'tech',periods:['Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'24.2',label:'Customizable reports & on-demand analysis',type:'sub',cat:'tech',periods:['Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'24.3',label:'Dashboards address service gaps',type:'sub',cat:'tech',periods:['Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'24.4',label:'Dashboards institutionalized incl. interdept.',type:'sub',cat:'tech',periods:['Q10','Q11','Q12']},
+  {id:'25',label:'Alerts sent to citizens for appointments & screening',type:'milestone',cat:'citizen',periods:[]},
+  {id:'25.1',label:'Alerts go live',type:'sub',cat:'citizen',periods:['Q3','Q5','Q7']},
+  {id:'25.2',label:'Assessment of alert impact',type:'sub',cat:'citizen',periods:['Q4','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'25.3',label:'Recommendations to improve messaging',type:'sub',cat:'citizen',periods:['Q4','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'25.4',label:'Followed up for compliance',type:'sub',cat:'citizen',periods:['Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'26',label:'Biannual PHWS; low-scoring blocks; inter-block competition',type:'milestone',cat:'governance',periods:[]},
+  {id:'26.1',label:'Score cards published',type:'sub',cat:'governance',periods:['Q5','Q7','Q9','Q11']},
+  {id:'26.2',label:'Actions for low-scoring blocks',type:'sub',cat:'governance',periods:['Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'26.3',label:'Inter-block competition designed & implemented',type:'sub',cat:'governance',periods:['Q8','Q9','Q10','Q11','Q12']},
+  {id:'27',label:'M&E, knowledge products, replication, state institutionalization',type:'milestone',cat:'governance',periods:[]},
+  {id:'27.1',label:'M&E framework developed',type:'sub',cat:'governance',periods:['M1']},
+  {id:'27.2',label:'Monthly updates submitted',type:'sub',cat:'governance',periods:['Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'27.3',label:'Quarterly project management reports',type:'sub',cat:'governance',periods:['Q4','Q6','Q7','Q8','Q9','Q10','Q11','Q12']},
+  {id:'27.4',label:'Knowledge products developed',type:'sub',cat:'governance',periods:['Q8','Q9','Q10','Q11','Q12']},
+  {id:'27.5',label:'Knowledge transfer & handover done',type:'sub',cat:'governance',periods:['Q12']},
+  {id:'27.6',label:'Phasing out; connecting with State CCM systems',type:'sub',cat:'governance',periods:['Q12']},
+];
+const catGroups={};
+['governance','tech','clinical','citizen','infra'].forEach(c=>{catGroups[c]=data.filter(d=>d.cat===c).map(d=>d.id);});
+function renderTable(){
+  const tbody=document.getElementById('ganttBody');
+  tbody.innerHTML='';
+  data.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.className=row.type==='milestone'?'mrow':'srow';
+    tr.dataset.id=row.id;tr.dataset.cat=row.cat;
+    const color=catColor[row.cat],bg=catBg[row.cat];
+    const tdLabel=document.createElement('td');
+    tdLabel.className='label';
+    if(row.type==='milestone'){
+      tdLabel.style.background=bg;
+      tdLabel.innerHTML=`<span class="cat-pill" style="background:${bg};color:${color};">${catLabel[row.cat]}</span><span class="sno">${row.id}</span><span style="color:${color};font-weight:600;">${row.label}</span>`;
+    } else {
+      tdLabel.innerHTML=`<span class="sno">${row.id}</span>${row.label}`;
+    }
+    tr.appendChild(tdLabel);
+    const ap=new Set(row.periods);
+    periods.forEach(p=>{
+      const td=document.createElement('td');
+      td.className='cell'+(phaseSep(p)?' psep':'');
+      if(ap.has(p)){const c=phaseOf(p);td.innerHTML=`<div class="bar" style="background:${c};opacity:0.82;"></div>`;}
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+function filterRows(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');b.style.background='';b.style.borderColor='';b.style.color='';});
+  btn.classList.add('active');
+  if(cat==='all'){btn.style.background='#444441';btn.style.borderColor='#444441';btn.style.color='#fff';}
+  else{const c=catColor[cat];btn.style.background=c;btn.style.borderColor=c;btn.style.color='#fff';}
+  document.querySelectorAll('#ganttBody tr').forEach(tr=>{
+    if(cat==='all')tr.classList.remove('hidden');
+    else(catGroups[cat]||[]).includes(tr.dataset.id)?tr.classList.remove('hidden'):tr.classList.add('hidden');
+  });
+}
+renderTable();
+</script>
+</body>
+</html>
 # keonjhar-workplan
